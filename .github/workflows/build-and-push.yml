@@ -5,8 +5,8 @@
 name: Publish Docker image
 
 env:
-  DOCKER_IMAGE_NAME: laromicas/romvault
-  PLATFORMS: linux/amd64,linux/386,linux/aarch64
+  DOCKER_IMAGE_NAME: marcusb/romvault-1
+  PLATFORMS: linux/amd64,linux/386,linux/aarch64/v8,linux/arm/v7
 
 on:
   release:
@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        platform: [linux/amd64, linux/arm64]
+        platform: [linux/amd64, linux/arm64, linux/arm/v7]
 
     steps:
       - name: Check out the repo
@@ -43,4 +43,4 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-          platform: ${{ matrix.platform }}
+          platforms: ${{ matrix.platform }}

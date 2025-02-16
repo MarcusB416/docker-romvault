@@ -1,4 +1,4 @@
-[![Publish Docker image](https://github.com/laromicas/docker-romvault/actions/workflows/build-and-push.yml/badge.svg)](https://github.com/laromicas/docker-romvault/actions/workflows/build-and-push.yml)
+<!-- [![Publish Docker image](https://github.com/laromicas/docker-romvault/actions/workflows/build-and-push.yml/badge.svg)](https://github.com/laromicas/docker-romvault/actions/workflows/build-and-push.yml)
 
 # Docker container for ROMVault
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://paypal.me/laromicas)
@@ -531,4 +531,4 @@ creation.
 ## Support or Contact
 
 Having troubles with the container or have questions?  Please
-[create a new issue](https://github.com/laromicas/docker-romvault/issues).
+[create a new issue](https://github.com/laromicas/docker-romvault/issues). -->
